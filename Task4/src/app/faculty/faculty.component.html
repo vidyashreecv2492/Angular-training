@@ -1,0 +1,42 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="facultyId">
+      <th mat-header-cell *matHeaderCellDef> Faculty Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.facultyId}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="facultyName">
+      <th mat-header-cell *matHeaderCellDef> Faculty Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.facultyName}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="facultyMobile">
+      <th mat-header-cell *matHeaderCellDef> Faculty Mobile </th>
+      <td mat-cell *matCellDef="let element"> {{element.facultyMobile}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="facultyEmail">
+      <th mat-header-cell *matHeaderCellDef> Faculty Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.facultyEmail}} </td>
+    </ng-container>
+    <ng-container matColumnDef="highestQualification">
+        <th mat-header-cell *matHeaderCellDef> Highest Qualification </th>
+        <td mat-cell *matCellDef="let element"> {{element.highestQualification}} </td>
+      </ng-container>
+      <ng-container matColumnDef="workLocation">
+        <th mat-header-cell *matHeaderCellDef> Work Location</th>
+        <td mat-cell *matCellDef="let element"> {{element.workLocation}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

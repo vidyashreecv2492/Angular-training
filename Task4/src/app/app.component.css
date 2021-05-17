@@ -1,0 +1,17 @@
+.header{
+    background-color: darkred;
+    color: white;
+}
+.title{
+    font-size: 25px;
+}
+.tabs{
+    float: right;
+    padding-left: 26%;
+    font-size: 18px;
+    
+    
+}
+.tabs a{
+    color: white;
+}
